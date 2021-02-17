@@ -1,0 +1,284 @@
+{
+    "classname": "HeaderControl",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c94e396a932946a3824769b7a96712db",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onBackClicked",
+                    "pw": {
+                        "displayName": "onBackClicked",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ga92824bedfc4e4aa2641a03c8eada20",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "hc70d18aeafb4292a067c994f7d418c6",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onDropClicked",
+                    "pw": {
+                        "displayName": "onDropClicked",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ga92824bedfc4e4aa2641a03c8eada20",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c9e2e2727dd64128a4970aa3835945e1",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyIndex": 3,
+                    "propertyKey": "onListItemClicked",
+                    "pw": {
+                        "displayName": "onListItemClicked",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ga92824bedfc4e4aa2641a03c8eada20",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "d0db1694cac94e978b2df3443aee215e",
+                    "originalPropertyKey": "isBackVisible",
+                    "propertyIndex": 7,
+                    "propertyKey": "isBackVisible",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Back Button Visible",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ga92824bedfc4e4aa2641a03c8eada20",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "ha5f881c382146ef942e9891677fa972",
+                    "originalPropertyKey": "isDropVisible",
+                    "propertyIndex": 8,
+                    "propertyKey": "isDropVisible",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Drop Button Visible",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ga92824bedfc4e4aa2641a03c8eada20",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "h34d90c7b9074651a5ac6479850b52ec",
+                    "originalPropertyKey": "destroyPreviousFormOnBack",
+                    "propertyIndex": 9,
+                    "propertyKey": "destroyPreviousFormOnBack",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Destroy Previos Form On Back",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ga92824bedfc4e4aa2641a03c8eada20",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[]",
+                    "group": "General",
+                    "kuid": "i5d127c96bb3480ebdc7e7f408a8d4d8",
+                    "originalPropertyKey": "dropDownList",
+                    "propertyIndex": 10,
+                    "propertyKey": "dropDownList",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Dropdown List",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "ga92824bedfc4e4aa2641a03c8eada20",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "350dp",
+                    "group": "General",
+                    "kuid": "ca66c788fac741358f22f1f902769fb3",
+                    "originalPropertyKey": "dropDownWidth",
+                    "propertyIndex": 11,
+                    "propertyKey": "dropDownWidth",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Dropdown Width",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "ga92824bedfc4e4aa2641a03c8eada20",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b7caa5f715fb4bda96991e18261cdc51",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "skinBackNormal",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Back Button Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnBack",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "c41b0fa3e5ec4d3591f1f6b464316661"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e15a12388dbc4524b8128a6e87d34c5a",
+                    "originalPropertyKey": "focusSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "skinBackFocus",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Back Button Focus",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnBack",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "c41b0fa3e5ec4d3591f1f6b464316661"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ea2e5c8a7f7f46358b1ef0ef2637af48",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblCaption",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "de2cc65cded04eae9987d83fed2eeac5"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a82aa863d6d84062bad285c3d0d8d727",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 4,
+                    "propertyKey": "skinText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Text Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblCaption",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "de2cc65cded04eae9987d83fed2eeac5"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ff0f97d7dfd4403f969c96a080406148",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 5,
+                    "propertyKey": "skinDropNormal",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Drop Button Normal",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnDrop",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "i1bf7b8542c3453883f6f7962e342044"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e86ecdaf4e354bd29df434673259ca2b",
+                    "originalPropertyKey": "focusSkin",
+                    "propertyIndex": 6,
+                    "propertyKey": "skinDropFocus",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Drop Button Focus",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnDrop",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "i1bf7b8542c3453883f6f7962e342044"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.ita.components",
+    "version": "1.0.0"
+}
