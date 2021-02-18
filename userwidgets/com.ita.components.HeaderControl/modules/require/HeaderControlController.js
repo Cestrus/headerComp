@@ -28,7 +28,13 @@ define(function() {
   var _flexBackdrop = null;
   
   var DEFAULT_OFFSET = "20dp";
+  
   var BACKDROP_ZINDEX = 1000;
+  
+  var validateSize = function(input) {
+    var pattern = /^[0-9]+(dp|px|%)$/;
+    return (pattern.test(input) && typeof input === "string")  ? true : false;
+  };
   
   var updateHeaderPosition = function () {
     var leftOffset = this.view.btnBack.isVisible ? this.view.btnBack.width : DEFAULT_OFFSET;
@@ -36,7 +42,7 @@ define(function() {
     
     this.view.lblCaption.left = leftOffset;
     this.view.lblCaption.right = rightOffset;
-  }
+  };
   
   var showPreviousForm = function() {
     if (this.onBackClicked) {
@@ -209,7 +215,6 @@ define(function() {
       });
       
       defineSetter(this, "dropDownWidth", function(val) {
-        //0-9, 0-9dp, 0-100%, 0-9px
         if (!(typeof val === "string" && val.trim().length > 0 || Number.isSafeInteger(val))) {
 			throw new Error("dropDownWidth has to be of valid size value.");
         }
